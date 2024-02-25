@@ -19,6 +19,7 @@ export default {
       heading4: '2.369rem',
       heading5: '1.777rem',
       para: '1rem',
+      smallpara: '0.8rem',
 
 
     },
