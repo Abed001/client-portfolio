@@ -13,14 +13,14 @@ export default {
 
 
     fontSize: {
-      heading1: '7.993rem',
-      heading2: '5.653rem',
-      heading3: '3.998rem',
-      heading4: '2.827rem',
-      heading5: '1.999rem',
-      heading6: '1.414rem',
+      heading1: '5.61rem',
+      heading2: '4.209rem',
+      heading3: '3.157rem',
+      heading4: '2.369rem',
+      heading5: '1.777rem',
+      heading6: '1.333rem',
       para: '1rem',
-      smallpara: '0.707rem',
+      smallpara: '0.75rem',
 
 
     },
