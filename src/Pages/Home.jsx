@@ -1,5 +1,4 @@
 import React from 'react'
-import first from '../../public/assets/first.jpg'
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import { Spin as Hamburger } from 'hamburger-react'
 import Navbar from '../Components/Navbar';
@@ -14,9 +13,10 @@ import FirstSection from '../Components/FirstSection';
 
 export default function Home() {
     return (
-        <div>
-          <FirstSection/>
-             {  /* <Navbar />
+        <div className='overflow-x-hidden'>
+             <FirstSection/>
+        
+             {  /*  <Navbar />
 
 
                 <div className='relative min-h-[100vh] flex flex-col font-openSans font-bold text-white text-heading3 lg:text-heading1'>
