@@ -12,6 +12,9 @@ body{
       display: none;
     }
   }
+
+  /*this css code is used to make all the ul elments to white color thwn on hovering 
+  one item it saty white but the others will become gray */
   .my-list {
     list-style: none; /* Remove default bullets */
     padding: 0;
@@ -36,8 +39,21 @@ body{
   }
  
 
+/*this css code  is for portfolio project in the homepage
+ */
 
-  .my-list li span.x {
+
+
+.my-list:hover div {  /* Applies to all list items when hovering the list */
+  opacity: 0.7; /* Reduce opacity of all items */
+}
+
+.my-list div:hover {  /* Applies specific styles to the hovered item */
+  text-shadow: 0 0 1px #333; /* Subtle text shadow for focus */ 
+  opacity: 1; /* Maintain full opacity for the hovered item */
+}
+
+  .my-list div span.x {
     content: "x";
     font-size: 0.8em; /* Adjust size as needed */
     color: #fff; /* Color of the "x" (adjust as needed) */
@@ -48,7 +64,7 @@ body{
     /* border-radius: 50%; (optional) */
   }
   
-  .my-list li:hover span.x {
+  .my-list div:hover span.x {
     opacity: 1; /* Show the "x" on hover */
   }
 

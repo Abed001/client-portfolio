@@ -53,7 +53,7 @@ export default function Navbar() {
                 <div className='overflow-hidden flex flex-col justify-center items-center w-[100%] min-h-[100vh] z-10'>
 
                     <div className='flex flex-col justify-center items-center text-heading1 lg:text-heading2 w-[100%] h-[100vh] absolute right-10 top-0'>
-                        <ul className='ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] '>
+                        <ul className='ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-blue-500 w-[100%] h-[100vh] '>
                             <li>portfolio</li>
                             <li>acclaim</li>
                             <li>contact</li>
