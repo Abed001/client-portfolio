@@ -13,7 +13,7 @@ import FirstSection from '../Components/FirstSection';
 
 export default function Home() {
     return (
-        <div className='overflow-x-hidden'>
+        <div className='overflow-x-hidden overflow-hidden '>
              <FirstSection/>
         
              {  /*  <Navbar />

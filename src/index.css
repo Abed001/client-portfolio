@@ -44,6 +44,8 @@ body{
 
 
 
+/*opening menu items text color effect this code is also used for the ome page divs*/
+
 .my-list:hover div {  /* Applies to all list items when hovering the list */
   opacity: 0.7; /* Reduce opacity of all items */
 }
@@ -116,3 +118,63 @@ body{
   .item:nth-child(5):hover ~ .bg img:nth-child(5) {
     opacity:1;
   }
+
+  
+@media (max-width:765px) {
+  .closeIcon {
+    font-size: 20px;
+  }
+}
+
+.closeIcon{
+  font-size: 40px;
+}
+
+
+.name div {
+  overflow: hidden;
+  height: 22px; 
+}
+
+.name span {
+  overflow: hidden;
+  height: 22px; 
+}
+
+
+.name p {
+  overflow: hidden;
+  height: 22px; 
+}
+
+
+.arrow #mailarrow {
+  transform: rotatez(-45deg);
+  transition: transform 0.5s ease-in-out; /* Icon becomes a straight line on hover */
+}
+
+.arrow:hover #mailarrow {
+  transform: rotatez(0deg);
+  transition: transform 0.5s ease-in-out;
+  /* Icon becomes a straight line on hover */
+}
+
+
+
+.arrow #instarrow {
+  transform: rotatez(-45deg);
+  transition: transform 0.5s ease-in-out; /* Icon becomes a straight line on hover */
+}
+
+.arrow:hover #instarrow {
+  transform: rotatez(0deg);
+  transition: transform 0.5s ease-in-out;
+  /* Icon becomes a straight line on hover */
+}
+
+
+.one {
+  border-style: solid;
+  border-width: 5px;
+}
+

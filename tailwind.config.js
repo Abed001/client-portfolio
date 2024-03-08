@@ -31,7 +31,7 @@ export default {
     backgroundImage: {
       'homelg': "url('/assets/figmapic.png')",
       'investbg': "url('/assets/invest_qatar/200_Camera_2.png')",
-      'kioskbg': "url('/assets/neon_kiosk/first.jpg')",
+      'kioskbg': "url('/assets/neon_kiosk/firstneo.webp')",
       'expobg': "url('/assets/qatar_expo/firstexpo.jpg')",
       'qndbg': "url('/assets/qatar_national_day/amphi-1.jpg')",
       'blackcolor': "url('/assets/Black_colour.jpg')",
