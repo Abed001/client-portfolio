@@ -18,7 +18,7 @@ export default function FirstSection() {
 
             <div className='relative overflow-hidden min-h-[100vh]  flex flex-col font-openSans font-bold text-white text-heading3 lg:text-heading1'>
 
-                <div className="uppercase list-none my-list wrapper flex flex-col justify-center items-center">
+                <div className="uppercase list-none my-list wrapper flex flex-col justify-center items-center z-20">
 
                     <div className="item"></div>
 
@@ -68,11 +68,12 @@ export default function FirstSection() {
                         <img src="/assets/qatar_expo/1-1.webp" />
                         <img src="/assets/qatar_national_day/amphi-1.webp" />
                     </div>
-                    
+
 
 
                 </div>
-                <div className='absolute top-0 left-0 right-0'><Navbar /></div>
+                <div className='fixed top-0 left-0 right-0 z-50'>
+                    <Navbar /></div>
             </div>
 
         </div>

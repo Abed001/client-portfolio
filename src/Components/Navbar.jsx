@@ -1,18 +1,15 @@
 import React from 'react'
-import { Spin as Hamburger } from 'hamburger-react'
 import { useState, useEffect } from 'react'
-import { Link, useNavigate, NavLink } from "react-router-dom";
-import FirstSection from './FirstSection';
-import Black_colour from '/assets/Black_colour.jpg'
+import { Link, } from "react-router-dom";
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
+import Scramble from 'react-scramble'
 
-import Marquee from "react-fast-marquee";
 
 
 export default function Navbar() {
     const comp = useRef(null)
-    const [hovered,   setHovered] = useState(false);
+    const [hovered, setHovered] = useState(false);
 
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -88,15 +85,15 @@ export default function Navbar() {
             element.removeEventListener('mouseenter', () => tl.play());
             element.removeEventListener('mouseleave', () => tl.reverse());
         };
-    }, [comp]); 
-    
+    }, [comp]);
+
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
             const t1 = gsap.timeline()
             t1.from(["#menu"], {
                 opacity: 0,
-               
+
                 xPercent: -20,
                 duration: 1,
                 delay: 0.1,
@@ -106,7 +103,7 @@ export default function Navbar() {
 
                 .to(["#menu"], {
                     opacity: 1,
-                   
+
                     xPercent: -20,
                     duration: 1,
                     delay: 0.1,
@@ -127,40 +124,107 @@ export default function Navbar() {
 
         <div ref={comp} className='w-[100%] lg:w-[95%] bg-transparent tracking-tighter relative font-openSans font-bold text-white text-heading6 flex bg-purple justify-between py-5 px-5 lg:py-5 lg:px-10'>
             { /*  <span id='name' className=' z-30 uppercase'>Mohieddin Zidane</span>*/}
-            <div className='h-[60px] name flex flex-col z-30 uppercase tracking-tighter  ' >
+            <div className='h-[60px] name flex flex-col z-30 uppercase tracking-tighter' >
                 <div className=' flex items-center justify-left'><p>M</p><span id='name'>ohie </span></div>
                 <div className=' flex items-center justify-left'><p>E</p><span id='name'>ddin </span></div>
                 <div className=' flex items-center justify-left'><p>Z</p><span id='name'>idane </span></div>
             </div>
 
 
-                {open && (
-                    
-                    
-                    <div className=' flex flex-col justify-center items-center w-[100%] min-h-[100vh] z-10'>
+            {open && (
 
-                        <div className='my-list flex flex-col justify-center items-center text-heading1 lg:text-heading2 w-[100%] h-[100vh] absolute right-0 left-0 top-0'>
-                            <ul className=' ml-5 lg:ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] '>
-                                <li>portfolio</li>
-                                <li>acclaim</li>
-                                <li>contact</li>
-                                <li className='mb-40'>about</li>
 
-                            </ul>
+                <div className=' flex flex-col justify-center items-center w-[100%] min-h-[100vh] z-10'>
 
-                        </div>
+                    <div className='my-list flex flex-col justify-center items-center text-heading1 lg:text-heading2 w-[100%] h-[100vh] absolute right-0 left-0 top-0'>
+                        <ul className=' ml-5 lg:ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] '>
+                            <li> <Scramble
+                                autoStart={false}
+                                mouseEnterTrigger="restart"
+                                text="portfolio"
+                                steps={[
+                                    {
+                                        roll: 2,
+                                        action: '+',
+                                        type: 'forward',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                ]}
+                            /></li>
+
+                            <li> <Scramble
+                                autoStart={false}
+                                mouseEnterTrigger="restart"
+                                text="acclaim"
+                                steps={[
+                                    {
+                                        roll: 2,
+                                        action: '+',
+                                        type: 'forward',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                ]}
+                            /></li>
+
+                            <li> <Scramble
+                                autoStart={false}
+                                mouseEnterTrigger="restart"
+                                text="contact"
+                                steps={[
+                                    {
+                                        roll: 2,
+                                        action: '+',
+                                        type: 'forward',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                ]}
+                            /></li>
+
+                            <li className='mb-40'> <Scramble
+                                autoStart={false}
+                                mouseEnterTrigger="restart"
+                                text="about"
+                                steps={[
+                                    {
+                                        roll: 2,
+                                        action: '+',
+                                        type: 'forward',
+                                    },
+                                    {
+                                        action: '-',
+                                        type: 'forward',
+                                    },
+                                ]}
+                            /></li>
+
+
+
+
+
+                        </ul>
+
+                    </div>
 
                 </div>
-                    )}
+            )}
 
 
-                <span id='menu' className='h-[20px]  z-30 cursor-pointer text-white mr-5 ' onClick={handleMenuToggle}>
-                    {text}
-                </span>
+            <span id='menu' className='h-[20px] z-30 cursor-pointer text-white mr-5 ' onClick={handleMenuToggle}>
+                {text}
+            </span>
 
 
 
 
-            </div>
-        )
-    }
+        </div>
+    )
+}
