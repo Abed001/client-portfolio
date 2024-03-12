@@ -13,6 +13,8 @@ export default {
 
 
     fontSize: {
+     
+      heading: '11.391rem',
       heading1: '5.61rem',
       heading2: '4.209rem',
       heading3: '3.157rem',

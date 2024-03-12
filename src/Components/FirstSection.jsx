@@ -63,7 +63,7 @@ export default function FirstSection() {
                         <video autoPlay muted loop src="/assets/bgvideo.mp4"
                             className='absolute top-0 left-0 right-0 w-[100%] object-cover -z-10'>
                         </video>
-                        <img src="/assets/invest_qatar/200_Camera_2.webp" />
+                        <img src="/assets/invest_qatar/Camera_2.webp" />
                         <img src={"/assets/neon_kiosk/firstneo.webp"} />
                         <img src="/assets/qatar_expo/1-1.webp" />
                         <img src="/assets/qatar_national_day/amphi-1.webp" />
