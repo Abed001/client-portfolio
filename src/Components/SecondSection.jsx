@@ -49,32 +49,33 @@ export default function SecondSection() {
 
     return (
         <div ref={comp} className=' font-openSans font-bold text-white text-heading3 lg:text-heading1'>
-            <section className='flex flex-row w-[100%] justify-center lg:justify-start'>
+            <section className='mt-[-100px] flex flex-col w-[100%] justify-center lg:justify-start'>
 
-                <div className='h-20 arrow mt-20 lg:mt-40 ml-10 flex text-heading5 lg:text-heading4  lg:w-[50%] ' >
+
+
+                <div className='w-[50%] h-20 arrow  mb-40 lg:mt-60 ml-10 flex justify-start text-heading5 lg:text-heading4 lg:w-[50%] ' >
                     <div>  <AiOutlineMail size={40} /></div>
                     <div>
                         <span className='uppercase  text-center block tracking-tighter'>get in </span>
                         <span className=' uppercase  text-center block tracking-tighter'>touch</span>
                     </div>
-                    <div className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight style={{ transform: 'rotate(-45deg)' }} size={40} stroke-width="1" /></div>
+                    <div id='mailarrow' className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight style={{ transform: 'rotate(-45deg)' }} size={40} stroke-width="1" /></div>
+                    <div id='mailarrow' className=' hidden-on-phone mr-10 mt-10'>< GoArrowRight size={50} stroke-width="1" /></div>
+
+                </div>
+
+                <div className='ml-auto w-[50%] h-20 arrow  mb-40 lg:mt-20  flex justify-start text-heading5 lg:text-heading4 lg:w-[50%] ' >
+                    <div>  <BsInstagram size={30} /></div>
+                    <div>
+                        <span className='uppercase  text-center block tracking-tighter'>follow</span>
+                        <span className=' uppercase  text-center block tracking-tighter'>mehyo</span>
+                    </div>
+                    <div id='mailarrow' className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight style={{ transform: 'rotate(-45deg)' }} size={40} stroke-width="1" /></div>
                     <div id='mailarrow' className=' hidden-on-phone mr-10 mt-10'>< GoArrowRight size={50} stroke-width="1" /></div>
 
                 </div>
 
 
-
-                <div className='mx-auto arrow mt-60 mb-40 flex text-heading5 lg:text-heading4 lg:w-[50%] lg:justify-end lg:mr-60 ' >
-                    <div className=' mr-2'>  <BsInstagram size={30} /></div>
-                    <div>
-                        <span className=' uppercase  text-center block tracking-tighter'>follow </span>
-                        <span className='uppercase  text-center block tracking-tighter'>mehyo</span>
-                    </div>
-                    <div className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight style={{ transform: 'rotate(-45deg)' }} size={40} stroke-width="1" /></div>
-                    <div id='instarrow' className='hidden-on-phone mr-10 mt-10'><GoArrowRight size={50} stroke-width="1" /></div>
-
-
-                </div>
             </section>
 
             <div className='tracking-tighter uppercase'>

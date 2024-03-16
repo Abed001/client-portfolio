@@ -18,7 +18,7 @@ export default function FirstSection() {
 
             <div className='relative overflow-hidden min-h-[100vh]  flex flex-col font-openSans font-bold text-white text-heading3 lg:text-heading1'>
 
-                <div className="uppercase list-none my-list wrapper flex flex-col justify-center items-center z-20">
+                <div className="uppercase list-none my-list wrapper flex flex-col justify-center items-center z-20 text-heading2 lg:text-heading1">
 
                     <div className="item"></div>
 
