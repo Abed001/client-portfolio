@@ -4,7 +4,7 @@ import Scramble from 'react-scramble'
 export default function Footer() {
     return (
         <div className='font-openSans font-bold text-white text-heading3 lg:text-heading1'>
-            <div className=' uppercase hidden-on-phone text-left text-smallpara flex lg:flex-row justify-between items-center w-[100%]'>
+            <div className=' uppercase hidden-on-phone text-left text-para flex lg:flex-row justify-between items-center w-[100%]'>
                 <p className='font-openSans ml-10'>Mehyo @ 2023</p>
                 <ul className='font-openSans p-0 m-0 list-none lg:flex'>
 
@@ -83,7 +83,7 @@ export default function Footer() {
             </div>
 
 
-            <div className='mt-5 font-openSans lg:hidden md:hidden text-left text-smallpara flex flex-col lg:flex-row items-center  w-[100%]'>
+            <div className='mt-5 font-openSans lg:hidden md:hidden text-left text-para flex flex-col lg:flex-row items-center  w-[100%]'>
                 <ul className='w-[100%] justify-start p-0 ml-40 uppercase list-none lg:flex'>
                     <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/"><li className='mr-5 mb-5 '>Home</li></Link>
                     <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/Portfolio"><li className='mr-5 mb-5'>portfolio</li></Link>

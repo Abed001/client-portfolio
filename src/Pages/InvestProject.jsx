@@ -75,7 +75,7 @@ export default function InvestProject() {
           <Navbar /></div>
         <div className=' min-h-[100vh] flex flex-col items-center justify-center font-openSans font-bold text-white text-heading3 lg:text-heading1'>
 
-          <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/"> <p className='absolute top-[410px] text-white text-para font-bold lg:top-[110px]'> <Scramble
+          <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/"> <p className='absolute top-[410px] ml-[-35px] text-white text-para font-bold lg:top-[110px] lg:ml-0'> <Scramble
             autoStart={false}
             mouseEnterTrigger="restart"
             text="[Back]"
@@ -145,12 +145,12 @@ export default function InvestProject() {
 
           <MySlider images={investPageImages} />
 
-          <div className='absolute bottom-[900px] right-10 lg:bottom-[650px] lg:left-[600px] arrow flex text-heading5 lg:text-heading4 lg:w-[70%] lg:mt-20 lg:mb-20 ' >
-            <div id='mailarrow' className='arrow lg:hidden md:hidden'><GoArrowRight style={{ transform: 'rotate(-45deg)' }} size={40} stroke-width="1" /></div>
+          <div className='font-bold leading-8 absolute bottom-[1000px] right-10 lg:bottom-[550px] lg:left-[600px] arrow flex text-heading4 lg:text-heading4 lg:w-[70%] lg:mb-20 ' >
+            <div id='mailarrow' className='arrow lg:hidden md:hidden'><GoArrowRight  size={40} stroke-width="1" /></div>
             <div id='mailarrow' className=' hidden-on-phone'>< GoArrowRight size={50} stroke-width="1" /></div>
             <div>
-              <span className='uppercase  text-center block tracking-tighter'>back to all</span>
-              <span className=' uppercase  text-center block tracking-tighter'>projects</span>
+              <span className='uppercase  text-left block tracking-tight'>back to all</span>
+              <span className=' uppercase  text-left block tracking-tight'>projects</span>
             </div>
 
           </div>
