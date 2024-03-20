@@ -78,9 +78,9 @@ export default function SecondSection() {
 
             </section>
 
-            <div className='tracking-tighter uppercase'>
+            <div className=' tracking-tighter uppercase'>
                 <Marquee >
-                    I can be a React component, multiple React components, or just some text.
+                    <p className='px-4'>x</p>  Mohie eddin zidane  x  Mohie eddin zidane
                 </Marquee>
             </div>
 
