@@ -178,3 +178,11 @@ body{
   border-width: 5px;
 }
 
+
+
+@media (max-width:765px) {
+  .textleft{
+    text-align: left;
+    
+  }
+}
