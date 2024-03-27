@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Link, } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
 import Scramble from 'react-scramble'
@@ -116,6 +116,14 @@ export default function Navbar() {
     }, [open])
 
 
+    const location = useLocation();
+
+    const handleClick = () => {
+        if (location.pathname === to) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+
 
 
 
@@ -138,22 +146,24 @@ export default function Navbar() {
 
                     <div className='my-list flex flex-col justify-center items-center text-heading1 lg:text-heading2 w-[100%] h-[100vh] absolute right-0 left-0 top-0'>
                         <ul className=' ml-5 lg:ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] '>
-                            <li> <Scramble
-                                autoStart={false}
-                                mouseEnterTrigger="restart"
-                                text="portfolio"
-                                steps={[
-                                    {
-                                        roll: 2,
-                                        action: '+',
-                                        type: 'forward',
-                                    },
-                                    {
-                                        action: '-',
-                                        type: 'forward',
-                                    },
-                                ]}
-                            /></li>
+                            <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/">
+
+                                <li> <Scramble
+                                    autoStart={false}
+                                    mouseEnterTrigger="restart"
+                                    text="portfolio"
+                                    steps={[
+                                        {
+                                            roll: 2,
+                                            action: '+',
+                                            type: 'forward',
+                                        },
+                                        {
+                                            action: '-',
+                                            type: 'forward',
+                                        },
+                                    ]}
+                                /></li></Link>
 
                             <li> <Scramble
                                 autoStart={false}
@@ -189,22 +199,23 @@ export default function Navbar() {
                                 ]}
                             /></li>
 
-                            <li className='mb-40'> <Scramble
-                                autoStart={false}
-                                mouseEnterTrigger="restart"
-                                text="about"
-                                steps={[
-                                    {
-                                        roll: 2,
-                                        action: '+',
-                                        type: 'forward',
-                                    },
-                                    {
-                                        action: '-',
-                                        type: 'forward',
-                                    },
-                                ]}
-                            /></li>
+                            <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/About">
+                                <li className='mb-40'> <Scramble
+                                    autoStart={false}
+                                    mouseEnterTrigger="restart"
+                                    text="about"
+                                    steps={[
+                                        {
+                                            roll: 2,
+                                            action: '+',
+                                            type: 'forward',
+                                        },
+                                        {
+                                            action: '-',
+                                            type: 'forward',
+                                        },
+                                    ]}
+                                /></li></Link>
 
 
 

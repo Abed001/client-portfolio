@@ -16,11 +16,20 @@ import { GoArrowRight } from "react-icons/go";
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from "react"
-import { motion } from 'framer-motion';
+import { motion, useTransform, useScroll } from "framer-motion";
 
 
 
 export default function InvestProject() {
+
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({ target: targetRef });
+
+  // Calculate offset for image and text based on scroll progress
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]); // Adjust "-50%" for desired image movement
+  const textY = useTransform(scrollYProgress, [0, 1], ["50%", "0%"]); // Adjust "50%" for desired text movement
+
+
   gsap.registerPlugin(ScrollTrigger);
   const comp = useRef(null)
 
@@ -70,7 +79,7 @@ export default function InvestProject() {
 
   };
 
-
+  
   useLayoutEffect(() => {
 
     let ctx = gsap.context(() => {
@@ -122,7 +131,7 @@ export default function InvestProject() {
       >
         {/* Your page content */}
 
-        <div ref={comp} className=' relative overflow-hidden'>
+        <div  /*ref={targetRef}*/ ref={comp} className=' relative overflow-hidden'>
           <div className='fixed top-0 left-0 right-0 z-50'>
             <Navbar /></div>
           <div className=' min-h-[100vh] flex flex-col items-center justify-center font-openSans font-bold text-white text-heading3 lg:text-heading1'>
@@ -143,9 +152,7 @@ export default function InvestProject() {
                 },
               ]}
             /></p></Link>
-            {/*<p className='absolute top-[410px] text-white text-para font-bold lg:top-[110px]'>[Back]</p>*/}
-
-            <p id='text' className='hidden-on-phone absolute text-white text-heading font-bold lg:top-[70px] uppercase'>invest</p>
+            <motion.p style={imageY} id='text' className='hidden-on-phone absolute text-white text-heading font-bold lg:top-[70px] uppercase'>invest</motion.p>
 
             <img className=' w-[100%] min-h-[100vh] object-cover object-center lg:mt-[400px]' src={Original_Camera} alt="invest project" />
 

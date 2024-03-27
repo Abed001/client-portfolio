@@ -9,12 +9,9 @@ export default function FirstSection() {
 
     const [hoveredItem, setHoveredItem] = useState(null);
 
-
-
     return (
         <div>
             { /* <Navbar />*/}
-
 
             <div className='relative overflow-hidden min-h-[100vh]  flex flex-col font-openSans font-bold text-white text-heading3 lg:text-heading1'>
 

@@ -43,7 +43,7 @@ export default function PortfolioItemLeft({ imageSrc, title, description }){
 
         }, comp)
         return () => ctx.revert()
-    }, [])
+    }, []) 
 
 
     return (

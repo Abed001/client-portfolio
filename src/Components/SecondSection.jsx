@@ -8,12 +8,11 @@ import { Link } from "react-router-dom";
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
 import Footer from './Footer';
+import GitInTouchButton from './GitInTouchButton';
 
 export default function SecondSection() {
-
     const comp = useRef(null)
     const [hovered, setHovered] = useState(false);
-
 
     useLayoutEffect(() => {
         const element = comp.current;
@@ -53,7 +52,7 @@ export default function SecondSection() {
 
 
 
-                <div className=' font-bold w-[50%] h-20 arrow mt-60 mb-40 lg:mt-60 ml-10 flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] ' >
+                {/*<div className=' font-bold w-[50%] h-20 arrow mt-60 mb-40 lg:mt-60 ml-10 flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] ' >
                     <div>  <AiOutlineMail size={40} /></div>
                     <div className='leading-8'>
                         <span className='uppercase text-left block tracking-tight'>get in </span>
@@ -62,9 +61,11 @@ export default function SecondSection() {
                     <div id='mailarrow' className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight size={40} stroke-width="1" /></div>
                     <div id='mailarrow' className=' hidden-on-phone ml-2 mt-5'>< GoArrowRight size={50} stroke-width="1" /></div>
 
-                </div>
+    </div>*/}
 
-                <div className='ml-auto w-[50%] h-20 arrow  mb-40  flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] ' >
+                <GitInTouchButton emailAddress="abousy-hero@hotmail.com" subject="Specific Inquiry" />
+
+                <div className='ml-auto w-[50%] h-20 arrow  mb-40  flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] lg:mb-0 ' >
                     <div className='mr-2 '>  <BsInstagram size={30} /></div>
                     <div className='leading-8'>
                         <span className='uppercase  text-left block tracking-tighter'>follow</span>
@@ -78,11 +79,26 @@ export default function SecondSection() {
 
             </section>
 
-            <div className=' tracking-tighter uppercase'>
-                <Marquee >
+            <div className=' hidden-on-phone tracking-tighter uppercase'>
+
+                <Marquee style={{ fontSize: '10rem' }}>
                     <p className='px-4'>x</p>  Mohie eddin zidane  x  Mohie eddin zidane
+
                 </Marquee>
+
+
             </div>
+
+            <div className='lg:hidden md:hidden tracking-tighter uppercase'>
+
+                <Marquee style={{ fontSize: '5rem' }}>
+                    <p className='px-4'>x</p>  Mohie eddin zidane  x  Mohie eddin zidane
+
+                </Marquee>
+
+
+            </div>
+            
 
             <Footer />
 

@@ -108,6 +108,7 @@ body{
     height:100%;
     opacity:0;
     transition:all .3s ease;
+    object-fit: cover;
   }
   
   .bg img:nth-child(1),
@@ -193,4 +194,8 @@ body{
     height: 120px;
     stroke-width: 30px; /* Adjust stroke width proportionally if needed */
   }
+}
+.mark{
+  display:flex;
+  
 }
