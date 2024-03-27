@@ -9,6 +9,7 @@ import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
 import Footer from './Footer';
 import GitInTouchButton from './GitInTouchButton';
+import { IoCloseSharp } from "react-icons/io5";
 
 export default function SecondSection() {
     const comp = useRef(null)
@@ -47,7 +48,7 @@ export default function SecondSection() {
     }, [comp]);
 
     return (
-        <div ref={comp} className=' font-openSans font-bold text-white text-heading3 lg:text-heading1'>
+        <div ref={comp} className='font-openSans font-bold text-white text-heading3 lg:text-heading1'>
             <section className='mt-[-100px] flex flex-col w-[100%] justify-center lg:justify-start'>
 
 
@@ -79,30 +80,31 @@ export default function SecondSection() {
 
             </section>
 
-            <div className=' hidden-on-phone tracking-tighter uppercase'>
+            <div className='tracking-tighter uppercase'>
+                <Marquee>
+                    <p className="pt-5 px-4 hidden-on-phone "><IoCloseSharp name="close" size={80} strokeWidth={70} /></p>
+                    <p className="pt-2 px-4 lg:hidden md:hidden "><IoCloseSharp name="close" size={50} strokeWidth={70} /></p>
 
-                <Marquee style={{ fontSize: '10rem' }}>
-                    <p className='px-4'>x</p>  Mohie eddin zidane  x  Mohie eddin zidane
+                    <span className="text-heading2  lg:text-[8rem] font-bold ">Mohie eddin zidane</span>
 
-                </Marquee>
+                    <p className="pt-5 px-4 hidden-on-phone "><IoCloseSharp name="close" size={80} strokeWidth={70} /></p>                    <p className="pt-2 px-4 lg:hidden md:hidden "><IoCloseSharp name="close" size={50} strokeWidth={70} /></p>
 
-
-            </div>
-
-            <div className='lg:hidden md:hidden tracking-tighter uppercase'>
-
-                <Marquee style={{ fontSize: '5rem' }}>
-                    <p className='px-4'>x</p>  Mohie eddin zidane  x  Mohie eddin zidane
+                    <span className="text-heading2  lg:text-[8rem] font-bold ">Mohie eddin zidane</span>
 
                 </Marquee>
 
 
+                {/*  <Marquee style={{ fontSize: '8rem' }}>
+                    <p className='px-4'>x</p>  Mohie eddin zidane  x  Mohie eddin zidane
+
+</Marquee>*/}
+
+
             </div>
-            
+
+           
 
             <Footer />
-
-
 
         </div>
     )
