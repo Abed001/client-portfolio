@@ -197,5 +197,19 @@ body{
 }
 .mark{
   display:flex;
-  
+}
+
+.custom-cursor {
+ position:fixed;
+ top:0;
+ right:500px;
+
+   z-index:100;
+  color:purple;
+  width: 500px;
+  height: 500px;
+  filter: blur(80px); /* Add a blur effect */
+
+  box-shadow:0 0 5px purple,
+  0 0 25px purple,  0 0 50px purple
 }

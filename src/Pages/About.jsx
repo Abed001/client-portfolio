@@ -1,4 +1,4 @@
-import { React } from 'react'
+import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from "react"
@@ -9,6 +9,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import Navbar from '../Components/Navbar';
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import { motion, useTransform, useScroll } from "framer-motion";
+import CustomCursor from 'custom-cursor-react';
 
 
 export default function About() {
@@ -29,8 +30,19 @@ export default function About() {
         {/* Your page content */}
 
         <>
-
+        
           <div ref={targetRef} className='relative overflow-x-hidden overflow-y-hidden flex flex-col justify-center items-center px-5 text-white'>
+          <CustomCursor
+       targets={['img','marquee']}
+      customClass='custom-cursor'
+      fill='#C10B6F'
+      smoothness={{
+        movement: 0.2,
+        scale: 0.1,
+        opacity: 0.2,
+      }}
+      targetOpacity={0.5}
+    />
             <motion.h3 style={textY} className='z-20 textleft leading-8 uppercase text-heading4 tracking-tighter lg:text-heading1 lg:leading-[0.85] lg:w-full mt-40 '>
               <span className='lg:ml-80 lg:block'>FROM A FERVENT</span> <span className='lg:block'>FIRE—FUELED BY FASHION, MUSIC, AND DESIGN—MOHIE
                 <span className='lg:block'>EDDIN</span> <span className='lg:ml-40'>ZIDANE</span>  <span className='lg:ml-80'>RISES</span></span>
@@ -77,6 +89,7 @@ export default function About() {
       </motion.div>
 
     </ReactLenis>
+
 
   )
 }
