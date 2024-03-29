@@ -13,10 +13,10 @@ export default function Footer() {
 
 
     return (
-        <div className='font-openSans font-bold text-white text-heading3 lg:text-heading1'>
+        <div className=' font-openSans font-bold text-white text-heading3 lg:text-heading1'>
             <div className=' uppercase hidden-on-phone text-left text-smallpara flex lg:flex-row justify-between items-center w-[100%]'>
                 <p className='font-openSans ml-10'>Mehyo @ 2023</p>
-                <ul className='font-openSans p-0 m-0 list-none lg:flex'>
+                <ul className='z-50 font-openSans p-0 m-0 list-none lg:flex'>
 
                     <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/"><li className='mr-5 font-openSans'> <Scramble
                         autoStart={false}

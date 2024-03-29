@@ -66,7 +66,7 @@ export default function SecondSection() {
 
                 <GitInTouchButton emailAddress="abousy-hero@hotmail.com" subject="Specific Inquiry" />
 
-                <div className='ml-auto w-[50%] h-20 arrow  mb-40  flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] lg:mb-0 ' >
+                <div className='z-50 ml-auto w-[50%] h-20 arrow  mb-40  flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] lg:mb-0 ' >
                     <div className='mr-2 '>  <BsInstagram size={30} /></div>
                     <div className='leading-8'>
                         <span className='uppercase  text-left block tracking-tighter'>follow</span>
@@ -102,9 +102,9 @@ export default function SecondSection() {
 
             </div>
 
-           
 
-            <Footer />
+             <Footer/>
+
 
         </div>
     )

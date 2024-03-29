@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<div className=' overflow-auto '><Home /></div>} />
         <Route path="/Portfolio" element={<div className='overflow-auto'><Portfolio /></div>} />
-        <Route path="/About" element={<div className=' overflow-auto'><About /></div>} />
+        <Route path="/About" element={<div className=' overflow-auto'><About/></div>} />
         <Route path="/Contact" element={<div className=' overflow-auto '><Contact /></div>} />
         <Route path="/InvestProject" element={<div className=' overflow-auto '><InvestProject /></div>} />
         <Route path="/KioskProject" element={<div className='overflow-auto'><KioskProject /></div>} />

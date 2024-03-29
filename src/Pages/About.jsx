@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from "react"
 import SecondSection from '../Components/SecondSection';
 import mehyo from '/assets/mehyo/mehyo.webp'

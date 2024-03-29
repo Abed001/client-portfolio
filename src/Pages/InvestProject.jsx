@@ -206,7 +206,7 @@ export default function InvestProject() {
 
             {/* back to home link*/}
             <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/" onClick={handleClick}>
-              <div className='font-bold leading-8 absolute bottom-[1100px] right-10 arrow flex text-heading4 lg:text-heading4 lg:w-[70%] lg:mb-20 lg:bottom-[700px] lg:left-[610px] ' >
+              <div className='font-bold leading-8 absolute bottom-[1100px] right-10 arrow flex text-heading4 lg:text-heading4 lg:w-[70%] lg:mb-20 lg:bottom-[600px] lg:left-[610px] ' >
                 <div id='mailarrow' className='arrow lg:hidden md:hidden'><GoArrowRight size={40} stroke-width="1" /></div>
                 <div id='mailarrow' className=' hidden-on-phone'>< GoArrowRight size={50} stroke-width="1" /></div>
                 <div>
