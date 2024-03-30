@@ -204,8 +204,8 @@ body{
  top:-100px;
  right:-500px;
    z-index:40;
-  color:purple;
+  color:#910A67;
   width: 2000px;
   height: 2000px;
-  filter: blur(150px); /* Add a blur effect */
+  filter: blur(300px); /* Add a blur effect */
 }
