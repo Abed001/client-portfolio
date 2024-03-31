@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Link,useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
 import Scramble from 'react-scramble'
@@ -132,7 +132,7 @@ export default function Navbar() {
 
         <div ref={comp} className='w-[100%] lg:w-[95%] bg-transparent tracking-tighter relative font-openSans font-bold text-white text-heading6 flex bg-purple justify-between py-5 px-5 lg:py-5 lg:px-10'>
             { /*  <span id='name' className=' z-30 uppercase'>Mohieddin Zidane</span>*/}
-            <div className='h-[60px] name flex flex-col z-30 uppercase tracking-tighter' >
+            <div className='h-[60px] name flex flex-col z-50 uppercase tracking-tighter' >
                 <div className=' flex items-center justify-left'><p>M</p><span id='name'>ohie </span></div>
                 <div className=' flex items-center justify-left'><p>E</p><span id='name'>ddin </span></div>
                 <div className=' flex items-center justify-left'><p>Z</p><span id='name'>idane </span></div>
@@ -142,7 +142,7 @@ export default function Navbar() {
             {open && (
 
 
-                <div className=' flex flex-col justify-center items-center w-[100%] min-h-[100vh] z-10'>
+                <div className=' flex flex-col justify-center items-center w-[100%] min-h-[100vh] z-40'>
 
                     <div className='my-list flex flex-col justify-center items-center text-heading1 lg:text-heading2 w-[100%] h-[100vh] absolute right-0 left-0 top-0'>
                         <ul className=' ml-5 lg:ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] '>
@@ -182,22 +182,23 @@ export default function Navbar() {
                                 ]}
                             /></li>
 
-                            <li> <Scramble
-                                autoStart={false}
-                                mouseEnterTrigger="restart"
-                                text="contact"
-                                steps={[
-                                    {
-                                        roll: 2,
-                                        action: '+',
-                                        type: 'forward',
-                                    },
-                                    {
-                                        action: '-',
-                                        type: 'forward',
-                                    },
-                                ]}
-                            /></li>
+                            <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/Contact">
+                                <li> <Scramble
+                                    autoStart={false}
+                                    mouseEnterTrigger="restart"
+                                    text="contact"
+                                    steps={[
+                                        {
+                                            roll: 2,
+                                            action: '+',
+                                            type: 'forward',
+                                        },
+                                        {
+                                            action: '-',
+                                            type: 'forward',
+                                        },
+                                    ]}
+                                /></li></Link>
 
                             <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/About">
                                 <li className='mb-40'> <Scramble
@@ -229,7 +230,7 @@ export default function Navbar() {
             )}
 
 
-            <span id='menu' className='h-[20px] z-30 cursor-pointer text-white mr-5 ' onClick={handleMenuToggle}>
+            <span id='menu' className='h-[20px] z-50 cursor-pointer text-white mr-5 ' onClick={handleMenuToggle}>
                 {text}
             </span>
 
