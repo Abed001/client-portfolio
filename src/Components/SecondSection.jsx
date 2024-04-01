@@ -10,8 +10,10 @@ import gsap from "gsap"
 import Footer from './Footer';
 import GitInTouchButton from './GitInTouchButton';
 import { IoCloseSharp } from "react-icons/io5";
+import InstaIcon from './InstaIcon';
 
 export default function SecondSection() {
+    const username = 'moheyzaidan';
     const comp = useRef(null)
     const [hovered, setHovered] = useState(false);
 
@@ -51,23 +53,13 @@ export default function SecondSection() {
         <div ref={comp} className='font-openSans font-bold text-white text-heading3 lg:text-heading1'>
             <section className='mt-[-100px] flex flex-col w-[100%] justify-center lg:justify-start'>
 
-
-
-                {/*<div className=' font-bold w-[50%] h-20 arrow mt-60 mb-40 lg:mt-60 ml-10 flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] ' >
-                    <div>  <AiOutlineMail size={40} /></div>
-                    <div className='leading-8'>
-                        <span className='uppercase text-left block tracking-tight'>get in </span>
-                        <span className=' uppercase text-left block tracking-tight'>touch</span>
-                    </div>
-                    <div id='mailarrow' className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight size={40} stroke-width="1" /></div>
-                    <div id='mailarrow' className=' hidden-on-phone ml-2 mt-5'>< GoArrowRight size={50} stroke-width="1" /></div>
-
-    </div>*/}
-
                 <GitInTouchButton emailAddress="abousy-hero@hotmail.com" subject="Specific Inquiry" />
+                <InstaIcon username={username} />
 
-                <div className='z-20 ml-auto w-[50%] h-20 arrow  mb-40  flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] lg:mb-0 ' >
-                    <div className='mr-2 '>  <BsInstagram size={30} /></div>
+                {                   /* <div className='cursor-pointer z-20 ml-auto w-[50%] h-20 arrow  mb-40  flex justify-start text-heading4 lg:text-heading4 lg:w-[50%] lg:mb-0 ' >
+                    <div className='mr-2 '>  <BsInstagram size={30} username={username} /></div>
+
+                    <InstaIcon username={username} />
                     <div className='leading-8'>
                         <span className='uppercase  text-left block tracking-tighter'>follow</span>
                         <span className=' uppercase  text-left block tracking-tighter'>mehyo</span>
@@ -75,7 +67,7 @@ export default function SecondSection() {
                     <div id='mailarrow' className='lg:hidden md:hidden mr-10 mt-8'><GoArrowRight size={40} stroke-width="1" /></div>
                     <div id='mailarrow' className=' hidden-on-phone mt-5'>< GoArrowRight size={50} stroke-width="1" /></div>
 
-                </div>
+                </div>*/}
 
 
             </section>
@@ -103,7 +95,7 @@ export default function SecondSection() {
             </div>
 
 
-             <Footer/>
+            <Footer />
 
 
         </div>

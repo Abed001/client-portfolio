@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useLayoutEffect, useRef } from "react"
 import SecondSection from '../Components/SecondSection';
 import mehyo from '/assets/mehyo/mehyo.webp'
 import Marquee from "react-fast-marquee";
@@ -7,6 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import Navbar from '../Components/Navbar';
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import { motion, useTransform, useScroll } from "framer-motion";
+import { useLayoutEffect, useRef } from "react"
 import CustomCursor from 'custom-cursor-react';
 
 
@@ -33,7 +33,7 @@ export default function About() {
           <CustomCursor
        targets={['img','marquee']}
       customClass='custom-cursor'
-      fill='#C10B6F'
+      fill='#912BBC'
       smoothness={{
         movement: 0.2,
         scale: 0.1,

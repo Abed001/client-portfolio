@@ -35,7 +35,7 @@ export default function Footer() {
                         ]}
                     /></li></Link>
 
-                    <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/Portfolio"><li className='mr-5 font-openSans'> <Scramble
+                    <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/"><li className='mr-5 font-openSans'> <Scramble
                         autoStart={false}
                         mouseEnterTrigger="restart"
                         text="portfolio"

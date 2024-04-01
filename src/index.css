@@ -202,10 +202,9 @@ body{
 .custom-cursor {
  position:fixed;
  top:-100px;
- right:-500px;
-   z-index:10;
-  color:#910A67;  
-  width: 2000px;
-  height: 2000px;
-  filter: blur(300px); /* Add a blur effect */
+ right:500px;
+   z-index:10px; 
+  width: 1000px;
+  height: 1000px;
+  filter: blur(150px); /* Add a blur effect */
 }
