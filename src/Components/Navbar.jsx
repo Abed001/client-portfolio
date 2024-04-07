@@ -145,7 +145,8 @@ export default function Navbar() {
                 <div className=' flex flex-col justify-center items-center w-[100%] min-h-[100vh] z-40'>
 
                     <div className='my-list flex flex-col justify-center items-center text-heading1 lg:text-heading2 w-[100%] h-[100vh] absolute right-0 left-0 top-0'>
-                        <ul className=' ml-5 lg:ml-20 pt-80 pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] '>
+                        <ul className=' pt-[450px] pb-60 tracking-tighter mr-20 list-none uppercase text-center text-heading3 lg:text-heading1 bg-black w-[100%] h-[100vh] lg:mr-5 '>
+
                             <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/">
 
                                 <li> <Scramble

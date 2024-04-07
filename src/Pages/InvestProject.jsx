@@ -17,6 +17,7 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from "react"
 import { motion, useTransform, useScroll } from "framer-motion";
+import Layout from '../Components/Layout';
 
 
 
@@ -124,11 +125,13 @@ export default function InvestProject() {
   return (
 
     <ReactLenis root>
-      <motion.div
-        initial={{ opacity: 0 }} // Fade in from invisible
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }} // Fade duration (1 second)
-      >
+      <Layout>
+      {/*<motion.div
+       initial={{ opacity: 1, x: "20%" }} // Initially off-screen to the right
+       animate={{ opacity: 1, x: 0 }} // Slide to the left (0 position) to reveal
+       exit={{ opacity: 0, x: "20%" }} // Exit animation (unchanged)
+       transition={{ duration: 1 ,  ease: [0.83, 0, 0.17, 1]}}
+  >*/}
         {/* Your page content */}
 
         <div  /*ref={targetRef}*/ ref={comp} className=' relative overflow-hidden'>
@@ -206,7 +209,7 @@ export default function InvestProject() {
 
             {/* back to home link*/}
             <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/" onClick={handleClick}>
-              <div className='font-bold leading-8 absolute bottom-[1100px] right-10 arrow flex text-heading4 lg:text-heading4 lg:w-[70%] lg:mb-20 lg:bottom-[600px] lg:left-[610px] ' >
+              <div className='font-bold leading-8 absolute bottom-[1100px] right-10 arrow flex text-heading5 lg:text-heading4 lg:w-[70%] lg:mb-20 lg:bottom-[600px] lg:left-[610px] ' >
                 <div id='mailarrow' className='arrow lg:hidden md:hidden'><GoArrowRight size={40} stroke-width="1" /></div>
                 <div id='mailarrow' className=' hidden-on-phone'>< GoArrowRight size={50} stroke-width="1" /></div>
                 <div>
@@ -223,7 +226,7 @@ export default function InvestProject() {
           <SecondSection />
 
         </div>
-      </motion.div>
+        </Layout>
     </ReactLenis>
   )
 }

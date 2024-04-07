@@ -4,24 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function MySlider({ images }) {
 
-   {/* const NextArrow = ({ onClick }) => {
-        return (
-          <div className="slider-arrow next" onClick={onClick}>
-           
-          </div>
-        );
-      };
-      
-      const PrevArrow = ({ onClick }) => {
-        return (
-          <div className="slider-arrow prev" onClick={onClick}>
-          
-          </div>
-        );
-      };
-    */}
-
-      
     const settings = {
         className: "slider variable-width",
         dots: true,

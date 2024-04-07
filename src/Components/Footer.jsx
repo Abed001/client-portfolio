@@ -96,7 +96,7 @@ export default function Footer() {
             <div className='mt-5 font-openSans lg:hidden md:hidden text-left text-para flex flex-col lg:flex-row items-center w-[100%]'>
                 <ul className='w-[100%] justify-start p-0 ml-40 uppercase list-none lg:flex'>
                     <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/"><li className='mr-5 mb-5 '>Home</li></Link>
-                    <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/Portfolio"><li className='mr-5 mb-5'>portfolio</li></Link>
+                    <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/"><li className='mr-5 mb-5'>portfolio</li></Link>
                     <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/Contact"><li className='mr-5 mb-5'>contact</li></Link>
                     <Link onClick={handleClick} style={{ textDecoration: 'none', color: 'inherit' }} to="/About"><li className='mr-5 mb-5'>about</li></Link>
                     <li className='mb-20'>site by Abed</li>

@@ -17,6 +17,8 @@ import Emailbutton from '../Components/Emailbutton';
 import { Link, useLocation } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import EmailTeamButton from '../Components/EmailTeamButton';
+import Layout from "../Components/Layout"
+
 
 export default function Contact() {
   const location = useLocation();
@@ -30,10 +32,7 @@ export default function Contact() {
 
   return (
     <ReactLenis root>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }} >
+      <Layout>
         {/* Your page content */}
         <main className='px-5 relative overflow-y-hidden overflow-x-hidden  text-white flex flex-col z-20 textleft leading-8  uppercase text-heading4 tracking-[-4px] lg:px-0 lg:tracking-[-10px] lg:text-heading1 lg:leading-[0.5] lg:w-full mt-40 lg:pl-0'>
           <CustomCursor
@@ -86,7 +85,7 @@ export default function Contact() {
           <Navbar />
         </div>
         <div className='mt-[-50px] lg:mt-[-100px]'> <SecondSection /></div>
-      </motion.div>
+      </Layout>
 
     </ReactLenis>
   )
