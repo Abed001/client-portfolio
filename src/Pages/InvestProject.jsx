@@ -35,11 +35,15 @@ export default function InvestProject() {
   const comp = useRef(null)
 
   const investPageImages = [
+    "/assets/invest_qatar/Camera_17.webp",
+    "/assets/invest_qatar/Camera_18.webp",
+    "/assets/invest_qatar/Camera_19.webp",  
     "/assets/invest_qatar/Camera_2.webp",
     "/assets/invest_qatar/Camera_11.webp",
     "/assets/invest_qatar/Camera_6.webp",
     "/assets/invest_qatar/Camera_8.webp",
     "/assets/invest_qatar/Camera_10.webp",
+   
 
   ];
 
