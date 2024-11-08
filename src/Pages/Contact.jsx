@@ -56,7 +56,7 @@ export default function Contact() {
 
           </p>
           <div className='mb-10 lg:mb-40 mt-10 lg:mt-20 w-[100%] flex justify-center items-center'>
-            <img src={mehyo} className='w-[50%] max-h-[300px] lg:max-h-[700px] object-cover object-top-top lg:w-[40%]' />
+            <img src={mehyo} className='w-[50%] max-h-[300px] lg:max-h-[700px] object-cover object-top-top lg:w-[40%]' loading='eager' />
             <div className='mt-[100px] lg:mt-0'>
               <div className='mt-[-200px] lg:mt-[-300px] w-[50%] lg:w-[30%] lg:ml-40'>
                 <Emailbutton emailAddress="abousy-hero@hotmail.com" subject="Specific Inquiry" />
@@ -72,7 +72,7 @@ export default function Contact() {
               <span className='uppercase text-smallpara  lg:text-para mr-4 mt-5'>qatar</span>
             </div>
             <div className='w-[100%] flex justify-center'><p className='mb-5 p-0 mt-[30px] lg:mb-10 lg:mt-[60px] tracking-tight text-[4.7rem] lg:text-[16rem]'>dohacity</p> </div>
-            <div className=' relative justify-center items-center lg:px-5 py-2'> <img className='w-full object-cover object-center' src={qatar2} alt="doha" /></div>
+            <div className=' relative justify-center items-center lg:px-5 py-2'> <img className='w-full object-cover object-center' src={qatarlow} alt="doha" loading='lazy'/></div>
             <div className='absolute right-5 bottom-[-30px] lg:bottom-[-170px] lg:right-10 flex items-center'>
               <p className='pr-[15px] pb-[40px] lg:pb-[200px] lg:pr-5 uppercase text-para lg:text-heading4'>no</p>
               <h1 className='text-[7rem] lg:text-[20rem]'>307</h1>

@@ -1,10 +1,8 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Original_Camera from '/assets/invest_qatar/Original_Camera.webp'
 import SecondSection from '../Components/SecondSection';
 import PortfolioItem from '../Components/PortfolioItem';
-import Marquee from "react-fast-marquee";
-import { IoCloseSharp } from "react-icons/io5";
+import Marquees from '../Components/Marquees';
 import PortfolioItemLeft from '../Components/PortfolioItemLeft';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -164,22 +162,11 @@ export default function ExpoProject() {
             /></p></Link>
             <motion.p style={imageY} id='text' className='hidden-on-phone absolute text-white text-heading font-bold lg:top-[70px] uppercase'>expo</motion.p>
 
-            <img className=' w-[100%] min-h-[100vh] object-cover object-center lg:mt-[400px]' src='/assets/qatar_expo/expo1.webp' alt="invest project" />
+            <img className=' w-[100%] min-h-[100vh] object-cover object-center lg:mt-[400px]' src='/assets/qatar_expo/expo1.webp' alt="Expo project" loading='eager' />
 
             <div className='w-[100%] absolute top-[500px] right-0  lg:hidden md:hidden flex justify-center items-center tracking-tighter uppercase'>
 
-              <Marquee speed={70}>
-                <div className=' flex justify-center items-center'>
-                  <span className="text-heading2 ">mehyo</span>
-                  <span className="mt-2 "><IoCloseSharp name="close" size={70} /></span>
-                  <span className="text-heading2 ">mehyo</span>
-                  <span className="mt-2 "><IoCloseSharp name="close" size={70} /></span>
-                  <span className="text-heading2 ">mehyo</span>
-                  <span className="mt-2"><IoCloseSharp name="close" size={70} /></span>
-
-                </div>
-              </Marquee>
-
+              <Marquees/>
             </div>
 
             <div className="mb-60 p-5 lg:w-1/2 lg:mb-[500px] ">

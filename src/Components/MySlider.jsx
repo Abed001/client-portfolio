@@ -19,7 +19,7 @@ export default function MySlider({ images }) {
             <Slider {...settings}>
                 {images.map((image) => (
                     <div key={image}>
-                        <img className='cursor-pointer pl-10 p-2 max-w-[500px] object-cover object-center lg:p-5 lg:pl-0 lg:max-w-[900px] ' src={image} alt="Slider Image" />
+                        <img className='cursor-pointer pl-10 p-2 max-w-[500px] object-cover object-center lg:p-5 lg:pl-0 lg:max-w-[900px] ' src={image} alt="Slider Image" loading='lazy' />
                     </div>
                 ))}
             </Slider>

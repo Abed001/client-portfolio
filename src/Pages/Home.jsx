@@ -1,10 +1,7 @@
-import { React, useState, useEffect } from 'react'
-import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
+import React from 'react'
 import SecondSection from '../Components/SecondSection';
 import FirstSection from '../Components/FirstSection';
 import Layout from '../Components/Layout';
-
-
 
 
 export default function Home() {
