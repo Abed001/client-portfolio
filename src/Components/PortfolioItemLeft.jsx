@@ -3,9 +3,9 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useLayoutEffect, useRef } from "react"
 
-export default function PortfolioItemLeft({ imageSrc, title, description }){
+export default function PortfolioItemLeft({ imageSrc, title, description }) {
 
-     
+
 
     gsap.registerPlugin(ScrollTrigger);
     const comp = useRef(null)
@@ -43,7 +43,7 @@ export default function PortfolioItemLeft({ imageSrc, title, description }){
 
         }, comp)
         return () => ctx.revert()
-    }, []) 
+    }, [])
 
 
     return (

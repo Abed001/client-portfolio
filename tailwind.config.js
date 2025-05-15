@@ -13,7 +13,7 @@ export default {
 
 
     fontSize: {
-     
+
       heading: '11.391rem',
       heading1: '5.61rem',
       heading2: '4.209rem',
@@ -28,17 +28,19 @@ export default {
     },
 
 
-   
+
 
     backgroundImage: {
       'homelg': "url('/assets/figmapic.png')",
-      'investbg': "url('/assets/invest_qatar/200_Camera_2.png')",
-      'kioskbg': "url('/assets/neon_kiosk/firstneo.webp')",
-      'expobg': "url('/assets/qatar_expo/firstexpo.jpg')",
-      'qndbg': "url('/assets/qatar_national_day/amphi-1.jpg')",
-      'blackcolor': "url('/assets/Black_colour.jpg')",
-     
-     
+      'qatalum': "url('/assets/qatalum/qatalum(11).webp')",
+      'qub': "url('/assets/qup/qup(1).webp')",
+      'mun': "url('/assets/mun/mun1.webp')",
+      'quphb': "url('/assets/quphb/QUPBHUB2.webp')",
+      'bmw': "url('/assets/bmw/BMWStand3.webp')",
+      'boaw': "url('/assets/boaw/BOAW1.webp')",
+
+      'blackcolor': "url('/assets/Black_colour.jpg')"
+
 
     },
     extend: {

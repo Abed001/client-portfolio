@@ -1,10 +1,6 @@
-import React from 'react'
+
 import Marquee from "react-fast-marquee";
-import { useState, useEffect } from 'react'
-import { BsInstagram } from "react-icons/bs";
-import { GoArrowRight } from "react-icons/go";
-import { AiOutlineMail } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { useState } from 'react'
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
 import Footer from './Footer';

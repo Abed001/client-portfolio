@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SecondSection from '../Components/SecondSection';
 import FirstSection from '../Components/FirstSection';
 import Layout from '../Components/Layout';
